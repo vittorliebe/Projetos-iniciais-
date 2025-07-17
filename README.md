@@ -1,2 +1,3 @@
 # Projetos iniciais 
-Projetos iniciais em python
+Projetos iniciais em *python*
+
