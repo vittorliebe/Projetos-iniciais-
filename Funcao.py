@@ -1,8 +1,10 @@
-def porcentagem(valor1, valor2):
-    return valor1 + valor2
-while True:
-    valor1 =int(input("Valor 1: "))
-    valor2 = int(input("Valor 2:"))
+def porcentagem(valor1, taxa,):
+    return (valor1 * taxa / 100)
 
-    resposta = porcentagem(valor1,valor2)
-    print(valor1,"+", valor2, "=", resposta)
+
+valor1 =int(input("Valor 1: "))
+taxa = int(input("taxa :"))
+result = (valor1 * taxa / 100)
+resposta = porcentagem(valor1,taxa)
+print('Valor da Taxa é: ',resposta)
+print('Somado com a taxa ',valor1, '+',result, "=",valor1 + result)
