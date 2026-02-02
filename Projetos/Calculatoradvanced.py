@@ -63,19 +63,22 @@ def calculadora_normal():
 
 
 while True:
+    print("-" * 25)
     print("Calculadora Python! ")
-    print("-"*30)
+
     print("Digite 1 para descobrir a raiz quadrada de um número\n"
           + "Digite 2 para somar 3 números\n"
             + "Digite 3 para inserir a quantidade de números que voce deseja somar\n"
-                + "Digite 4 para fazer as 4 operações básicas dos números inseridos ")
+                + "Digite 4 para fazer as 4 operações básicas dos números inseridos\n "
+          +"Se deseja sair digite 5:  ")
+    print("-" * 20)
 
 
-    escolha = input("Escolha nossos tipos de cálculo de 1 a 4 \n"
-                        +"Se deseja sair digite /sair: \n  ")
+    escolha = int(input("Escolha nossos tipos de cálculo de 1 a 5: "))
 
-
-    if int(escolha) == 1:
+    if escolha == 5:
+        break
+    elif escolha == 1:
         raiz_quadrada()
 
     elif escolha == 2:
@@ -86,10 +89,8 @@ while True:
 
     elif escolha == 4:
         calculadora_normal()
-    elif escolha > 4 or escolha <= 0:
+    else:
         print("Valor inserido incorretamente! Tente de novo! ")
-    elif escolha == "/sair" or "/SAIR":
-        break
 
 
 
